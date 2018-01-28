@@ -1,0 +1,53 @@
+module detection(
+	input [7:0] x_lane0,
+	input [6:0] y_lane0,
+	
+	input [7:0] x_lane1,
+	input [6:0] y_lane1,
+	
+	
+	input [7:0] x_lane2,
+	input [6:0] y_lane2,
+	
+	
+	input [7:0] x_lane3,
+	input [6:0] y_lane3,
+	
+	
+	input [7:0] x_dot,
+	input [6:0] y_dot,
+	
+	output resetn
+
+);
+
+	reg [7:0] x_lane0_pos;
+	reg [6:0] y_lane0_pos;
+	assign x_lane0_pos = x_lane0;
+	assign y_lane0_pos = y_lane0;
+	
+	reg [7:0] x_lane1_pos;
+	reg [6:0] y_lane1_pos;
+	assign x_lane1_pos = x_lane1;
+	assign y_lane1_pos = y_lane1;
+	
+	
+	reg [7:0] x_lane2_pos;
+	reg [6:0] y_lane2_pos;
+	assign x_lane2_pos = x_lane2;
+	assign y_lane2_pos = y_lane2;
+	
+	
+	reg [7:0] x_lane3_pos;
+	reg [6:0] y_lane3_pos;
+	assign x_lane3_pos = x_lane3;
+	assign y_lane3_pos = y_lane3;
+	
+	
+	reg [7:0] x_dot_pos;
+	reg [6:0] y_dot_pos;
+	assign x_dot_pos = x_dot;
+	assign y_dot_pos = y_dot;
+	
+
+	

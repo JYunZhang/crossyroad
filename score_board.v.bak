@@ -1,0 +1,17 @@
+module score_board(
+	input plus_1,
+	input resetn,
+	output reg [7:0] score
+	);
+	
+	initial score = 8'b00000000;
+	
+	always @(posedge plue_1 or negedge resetn)
+	begin
+		if (!resetn)
+			counter <= 8'b00000000; 
+		else
+			score <= score + 1;
+	end
+
+endmodule
